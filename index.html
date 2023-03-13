@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MashAllah store</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MashAllah Electric Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/AddProduct.php">Add Product</a>
+                  </li>
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Pages/DeleteProduct.php">Delete Product</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Pages/UpdateProduct.php">Update Product</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Pages/ProductList.php">Product List</a>
+                  </li>
+                  
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 mb-5">
+
+        <select class="form-select drop mt-1 mb-5" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+
+        </select>
+
+
+      <div>
+
+        <label for="exampleFormControlInput1" class="form-label">Price</label>
+        <div class="input-group mb-3">
+            
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+            <input type="number" class="form-control" id="price" aria-label="Dollar amount (with dot and two decimal places)">
+        </div>
+
+      </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" id="Quantiy" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="00">
+        </div>
+
+        <div>
+
+            <button type="button" id="add" class="btn btn-primary">Add</button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5 mb-5">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
